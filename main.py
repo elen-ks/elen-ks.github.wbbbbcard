@@ -20,7 +20,7 @@ for _ in range(SCROLL_COUNT):
 cards = driver.find_elements(By.XPATH, "//article[@data-nm-id]")
 
 for card in cards:
-    if card.get_attribute("data-nm-id") == NEEDED_ID: 284529226
+    if card.get_attribute("data-nm-id") == NEEDED_ID:
         link = card.find_element(By.XPATH, ".//a").get_attribute("href")
         driver.get(link)
         break
