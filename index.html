@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>WB Redirect</title>
+</head>
+<body>
+
+<script>
+const SEARCH = "https://www.wildberries.ru/catalog/0/search.aspx?search=лонгслив%20облегающий&appType=1";
+const PRODUCT = "https://www.wildberries.ru/catalog/455394912/detail.aspx?appType=1";
+
+window.location.replace(SEARCH);
+
+setTimeout(() => {
+    window.location.replace(PRODUCT);
+}, 3500);
+</script>
+
+</body>
+</html>
