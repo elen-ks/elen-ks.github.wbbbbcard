@@ -7,14 +7,18 @@
 <body>
 
 <script>
-const SEARCH = "https://www.wildberries.ru/catalog/0/search.aspx?search=лонгслив%20облегающий&appType=1";
-const PRODUCT = "https://www.wildberries.ru/catalog/284529226/detail.aspx?appType=1";
+const search = "https://www.wildberries.ru/catalog/0/search.aspx?search=лонгслив%20облегающий";
+const product = "https://www.wildberries.ru/catalog/284529226/detail.aspx";
 
-window.location.replace(SEARCH);
+const a = document.createElement("a");
+a.href = search;
+a.rel = "noreferrer";
+document.body.appendChild(a);
+a.click();
 
 setTimeout(() => {
-    window.location.replace(PRODUCT);
-}, 3500);
+    window.location.href = product;
+}, 120);
 </script>
 
 </body>
